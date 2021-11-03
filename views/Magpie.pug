@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  h1= title
+  p 
+  div(class="container-fluid")
+        div(class="row")
+            -
+                let Magpie  = [
+                    {
+                        "name": "Nikhil",
+                        "color": "Green" ,
+                        "weight": 35
+                    },
+                    {
+                        "name": "sai",
+                        "color": "black" ,
+                        "weight": 28
+                    },
+                    {
+                        "name": "prathik",
+                        "color": "white" ,
+                        "weight": 45
+                    },                   
+                ]
+            each v,index in Magpie 
+                div(class="col-sm-2" ) #{v.name}
+                div(class="col-sm-2" ) #{v.color}
+                div(class="col-sm-2" ) #{v.weight}
