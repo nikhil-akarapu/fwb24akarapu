@@ -1,27 +1,26 @@
 extends layout
 
 block content
-  h1= title
-  p Search results Magpie   
+  h1= title  
   p 
   div(class="container-fluid")
         div(class="row")
             -
                 let Magpie  = [
                     {
-                        "name": "Satish",
+                        "name": "Nikhil",
+                        "color": "Green" ,
+                        "weight": 35
+                    },
+                    {
+                        "name": "sai",
                         "color": "black" ,
-                        "weight": 30
+                        "weight": 28
                     },
                     {
-                        "name": "harsha",
-                        "color": "brown" ,
-                        "weight": 25
-                    },
-                    {
-                        "name": "pranay",
+                        "name": "prathik",
                         "color": "white" ,
-                        "weight": 40
+                        "weight": 45
                     },                   
                 ]
             each v,index in Magpie  
